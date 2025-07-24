@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Admin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #0074D9; /* Warna Biru */
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+    }
+
+    .sidebar img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin: 10px auto;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #005fa3;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #003f6b;
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    .content h1 {
+      color: #0074D9;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0074D9;
+      color: white;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .button-group button {
+      padding: 10px 16px;
+      margin-right: 10px;
+      background-color: #0074D9;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button-group button:hover {
+      background-color: #005fa3;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Admin</h2>
+      <img src="#" alt="Admin Avatar">
+      <a href="#">Kelola User</a>
+      <a href="#">Kelola Laporan</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Kelola User</h1>
+
+      <div class="form-group">
+        <label>Tipe User:</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Nama:</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Username:</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Alamat:</label>
+        <input type="text">
+      </div>
+      <div class="form-group">
+        <label>Telepon:</label>
+        <input type="text">
+      </div>
+
+      <div class="button-group">
+        <button>Tambah</button>
+        <button>Edit</button>
+        <button>Hapus</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Id_user</th>
+            <th>Tipe_user</th>
+            <th>Nama_user</th>
+            <th>Alamat</th>
+            <th>Telepon</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Admin</td>
+            <td>orang</td>
+            <td>Jakarta</td>
+            <td>08139124844</td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Admin</td>
+            <td>Orang</td>
+            <td>Garut</td>
+            <td>081413166</td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Admin</td>
+            <td>Orang</td>
+            <td>Surabaya</td>
+            <td>0814151661</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+</body>
+</html>

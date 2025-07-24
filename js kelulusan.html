@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator KKM Siswa</title>
+</head>
+<body>
+  <h1>Kalkulator KKM Siswa</h1>
+
+  <label for="nilai">Masukkan Nilai:</label><br>
+  <input type="number" id="nilai" required /><br><br>
+
+  <label for="tidakHadir">Masukkan Jumlah Ketidakhadiran:</label><br>
+  <input type="number" id="tidakHadir" required /><br><br>
+
+  <button onclick="cekKelulusan()">Cek Kelulusan</button>
+
+  <script>
+    function cekKelulusan() {
+      let nilai = parseFloat(document.getElementById("nilai").value);
+      let tidakHadir = parseInt(document.getElementById("tidakHadir").value);
+
+      if (isNaN(nilai) || isNaN(tidakHadir)) {
+        alert("⚠ Silakan isi semua data dengan benar.");
+        return;
+      }
+
+      if (nilai >= 75 && tidakHadir <= 5) {
+        alert("✅ Selamat! Anda LULUS.");
+      } else {
+        alert("❌ Maaf, Anda TIDAK LULUS.");
+      }
+    }
+  </script>
+</body>
+</html>

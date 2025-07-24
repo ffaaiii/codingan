@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Log Activity - Admin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #0074D9;
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+    }
+
+    .sidebar img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin: 10px auto;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #005fa3;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #003f6b;
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    .content h1 {
+      color: #0074D9;
+      margin-bottom: 20px;
+    }
+
+    .filter-bar {
+      background-color: #0074D9;
+      padding: 10px;
+      color: white;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0074D9;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Admin</h2>
+      <img src="#" alt="Admin Avatar">
+      <a href="#">Kelola User</a>
+      <a href="#">Kelola Laporan</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Log Activity</h1>
+
+      <div class="filter-bar">Filter</div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID Log</th>
+            <th>Username</th>
+            <th>Waktu</th>
+            <th>Aktivitas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Admin Faisal</td>
+            <td>01/7/2025 11:20</td>
+            <td>Login</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Admin faaii</td>
+            <td>01/6/2025 6:25</td>
+            <td>Logout</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Admin salll</td>
+            <td>01/23/2025 9:33</td>
+            <td>Login</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
